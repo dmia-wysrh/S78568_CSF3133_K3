@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faculty Programming Workshop</title>
+</head>
+<body>
+
+    <!-- 1. HEADER SECTION: Contains the event name and short tagline -->
+	
+    <header>
+        <h1>TechPulse Programming Workshop</h1>
+        <p>Empowering the next generation of coders and innovators.</p>
+    </header>
+
+    <!-- NAVIGATION SECTION: Internal links jumping to page sections -->
+	
+    <nav>
+        <ul>
+            <li><a href="#about">About the Event</a></li>
+            <li><a href="#schedule">Event Schedule</a></li>
+            <li><a href="#register">Registration</a></li>
+        </ul>
+    </nav>
+
+    <!-- SECTION: Contains two articles introducing speakers -->
+	
+    <section id="about">
+        <h2>About the Event</h2>
+        
+        <article>
+            <h3>Keynote Speaker: Prof. Nurin</h3>
+            <p>Learn about the groundbreaking future of AI and software engineering from a leading pioneer in the tech industry.</p>
+        </article>
+
+        <article>
+            <h3>Hands-on Coding Session</h3>
+            <p>Dive straight into Java programming with live coding exercises, guided debugging, and expert mentorship.</p>
+        </article>
+    </section>
+
+    <!-- 2. EVENT SCHEDULE TABLE SECTION: Table with 6+ rows, rowspan, and colspan -->
+	
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Activity</th>
+                    <th>Venue</th>
+                    <th>Person in Charge</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>09:00 AM - 09:30 AM</td>
+                    <td>Opening Ceremony & Welcome Keynote</td>
+                    <td rowspan="2">Main Auditorium</td>
+                    <td>Dr. Dinie Yasmin</td>
+                </tr>
+                <tr>
+                    <td>09:30 AM - 11:00 AM</td>
+                    <td>Keynote: Future of AI in Software Engineering</td>
+                    <td>Prof. Nurin</td>
+                </tr>
+                <tr>
+                    <td>11:00 AM - 12:30 PM</td>
+                    <td>Hands-on Coding Workshop: Intro to Python</td>
+                    <td>Lab 3B</td>
+                    <td>Dr. Maisara</td>
+                </tr>
+                <tr>
+                    <td>12:30 PM - 01:30 PM</td>
+                    <td colspan="3">Lunch Break & Networking</td>
+                </tr>
+                <tr>
+                    <td>01:30 PM - 03:30 PM</td>
+                    <td>Hackathon Pitching & Team Presentations</td>
+                    <td>Main Auditorium</td>
+                    <td>Mr. Varsha</td>
+                </tr>
+                <tr>
+                    <td>03:30 PM - 04:00 PM</td>
+                    <td>Closing Ceremony & Award Announcement</td>
+                    <td>Main Auditorium</td>
+                    <td>Dean Yoogy Chintia</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- 3. REGISTRATION FORM SECTION: Form with text inputs, radios, checkboxes, -->
+    <!--    dropdown, and submit button                                           -->
+	
+    <section id="register">
+        <h2>Registration Form</h2>
+        <form action="register.html" method="post">
+            
+            <!-- Text Inputs with Labels -->
+			
+            <div>
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <br>
+            <div>
+                <label for="matric">Matric Number:</label><br>
+                <input type="text" id="matric" name="matric" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <br>
+
+            <!-- Radio Buttons for Year of Study -->
+			
+            <div>
+                <label>Year of Study:</label><br>
+                <input type="radio" id="year1" name="year_of_study" value="Year 1">
+                <label for="year1">Year 1</label><br>
+                <input type="radio" id="year2" name="year_of_study" value="Year 2">
+                <label for="year2">Year 2</label><br>
+                <input type="radio" id="year3" name="year_of_study" value="Year 3">
+                <label for="year3">Year 3</label><br>
+                <input type="radio" id="year4" name="year_of_study" value="Year 4">
+                <label for="year4">Year 4</label>
+            </div>
+            <br>
+
+            <!-- Checkboxes for Sessions (at least 3 choices) -->
+			
+            <div>
+                <label>Sessions you want to join (at least 3 choices):</label><br>
+                <input type="checkbox" id="session1" name="sessions" value="keynote">
+                <label for="session1">Keynote: Future of AI</label><br>
+                <input type="checkbox" id="session2" name="sessions" value="workshop">
+                <label for="session2">Hands-on Python Coding Workshop</label><br>
+                <input type="checkbox" id="session3" name="sessions" value="hackathon">
+                <label for="session3">Hackathon Pitching & Presentations</label>
+            </div>
+            <br>
+
+            <!-- Drop-down list for Programme / Faculty -->
+			
+            <div>
+                <label for="programme">Programme or Faculty:</label><br>
+                <select id="programme" name="programme">
+                    <option value="cs">Computer Science</option>
+                    <option value="se">Software Engineering</option>
+                    <option value="it">Information Technology</option>
+                    <option value="ds">Data Science</option>
+                </select>
+            </div>
+            <br>
+
+            <!-- Submit Button -->
+			
+            <div>
+                <button type="submit">Register Now</button>
+            </div>
+
+        </form>
+    </section>
+
+    <!-- FOOTER SECTION: Organizer name and copyright line -->
+	
+    <footer>
+        <p>&copy; 2026 Faculty of Science Computer and Mathematics. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
