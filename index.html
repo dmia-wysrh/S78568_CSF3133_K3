@@ -1,1 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Personal Profile Page</title>
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <header>
+        <h1>My Personal Profile</h1>
+        <p>Welcome to my personal webpage built!</p>
+    </header>
+
+
+    <!-- NAVIGATION SECTION -->
+    <nav>
+        <ul>
+            <li><a href="#profile-info">Personal Information</a></li>
+            <li><a href="#contact-form">Contact & Feedback Form</a></li>
+            <li><a href="#bio-article">About Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- SECTION 1: PERSONAL INFORMATION TABLE -->
+    <section id="profile-info">
+        <h2>Personal Information</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Attribute</th>
+                    <th>Details</th>
+                    <th>Category</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Name</td>
+                    <td>Damia Yasarah</td>
+                    <td>Personal</td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td>20</td>
+                    <td>Personal</td>
+                </tr>
+                <tr>
+                    <td>Occupation</td>
+                    <td>Software Engineering Student</td>
+                    <td>Professional</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- SECTION 2: SEMANTIC ARTICLE -->
+    <section id="bio-article">
+        <h2>About Me</h2>
+        <article>
+            <h3>My life as a student of Software Engineering</h3>
+            <p>I am passionate about building accessible, organized, and user-friendly web applications!</p>
+        </article>
+    </section>
+
+    <!-- SECTION 3: SIMPLE FORM -->
+    <section id="contact-form">
+        <h2>Get in Touch</h2>
+        <form action="submit.html" method="post">
+            
+            <!-- Text Inputs -->
+            <div>
+                <label for="username">Name:</label><br>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <br>
+
+            <!-- Radio Buttons for Gender -->
+            <div>
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label>
+            </div>
+            <br>
+
+            <!-- Checkboxes for Favorite Hobbies -->
+            <div>
+                <label>Favorite Hobbies:</label><br>
+                <input type="checkbox" id="hobby1" name="hobbies" value="Coding">
+                <label for="hobby1">Coding</label><br>
+                <input type="checkbox" id="hobby2" name="hobbies" value="Reading">
+                <label for="hobby2">Reading</label><br>
+                <input type="checkbox" id="hobby3" name="hobbies" value="Gaming">
+                <label for="hobby3">Gaming</label>
+            </div>
+            <br>
+
+            <!-- Submit Button -->
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+
+        </form>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <p>&copy; 2026 Damia Yasarah. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
 
