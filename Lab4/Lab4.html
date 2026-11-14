@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gibli Style Responsive Webpage</title>
+	
+	<style>
+	:root{
+		--ghibli-green: #5b7042;
+		--ghibli-sage: #8a9a7b;
+		--ghibli-cream: #fbfbfa;
+		--ghibli-paper: #f4f1ea;
+		--ghibli-brown: #4a3b32;
+		--ghibli-sky: #7ba4b5;
+		--ghibli-gold: #d4a373;
+	}
+	
+	body{
+		font-family: 'Georgia', serif;
+		background-color: var(--ghibli-cream);
+		color: var(--ghbili-brown);
+		margin: 0;
+		padding: 0;
+		line-height: 1.6;
+	}
+	
+	header{
+		text-align: center;
+		background: linear-gradient(to bottom, #d6e2e9, var(--ghibli-cream));
+		padding: 30px 20px;
+	}
+	
+	header h1 {
+        font-family: 'Palatino', 'Georgia', serif;
+        color: var(--ghibli-green);
+        font-size: 2.5rem;
+		margin: 0 0 8px 0;
+		text-decoration: underline;
+		text-decoration-color: var(--ghibli-gold);
+		text-underline-offset: 8px;
+		letter-spacing: 1px;
+    }
+
+	header p.subtitle {
+		color: var(--ghibli-brown);
+		font-style: italic;
+		font-size: 1.1rem;
+		margin: 0 0 25px 0;
+		opacity: 0.85;
+    }
+	
+	header img{
+		max-width: 100%;
+		height: auto;
+		border-radius: 12px;
+		box-shadow: 0 8px 20px rgba(74, 59, 50, 0.15);
+		border: 4px solid #fff;
+	}
+	
+	nav{
+		background-color: var(--ghibli-green);
+		padding: 12px 0;
+		box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+		position: sticky;
+		top: 0;
+		z-index: 100;
+	}
+	
+	nav ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		gap: 20px;
+	}
+	
+	nav ul li a:link,
+	nav ul li a:visited{
+		display: block;
+		font-weight: bold;
+		color: #fff;
+		background-color: var(--ghibli-sage);
+		width: 140px;
+		text-align: center;
+		padding: 8px 12px;
+		text-decoration: none;
+		text-transform: uppercase;
+		border-radius: 20px;
+		font-size: 0.85rem;
+		letter-spacing: 1px;
+		transition: all 0.3s ease;
+	}
+	
+	nav ul li a:hover{
+		background-color: var(--ghibli-gold);
+		transform: translateY(-2px);
+		box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+	}
+	
+	nav ul li a:active{
+		transform: translateY(0);
+	}
+	
+	section{
+		background: var(--ghibli-paper);
+		max-width: 650px;
+		margin: 30px auto;
+		padding: 30px;
+		border-radius: 15px;
+		box-shadow: 0 6px 15px rgba(74, 59, 50, 0.08);
+		border: 1px solid #e3dec9;
+	}
+	
+	h2{
+		color: var(--ghibli-green);
+		text-decoration: underline;
+		text-decoration-color: var(--ghibli-gold);
+		text-underline-offset: 6px;
+		font-family: 'Palatino', serif;
+		margin-top: 0;
+	}
+	
+	center, .video-container{
+		text-align: center;
+		width: 100%;
+	}
+	
+	video{
+		display: block;
+		margin: 0 auto;
+		max-width: 100%;
+		height: auto;
+		border-radius: 8px;
+		box-shadow: 0 4px 10px rgba(0,0,0,.1);
+	}
+	
+	for label{
+		font-weight: bold;
+		color: var(--ghibli-brown);
+	}
+	
+	input[type="text"]{
+		width: 100%;
+		padding: 10px;
+		margin-top: 5px;
+		border: 1px solid #ccc;
+		border-radius: 6px;
+		background-color: #fff;
+		box-sizing: border-box;
+		font-family: inherit;
+	}
+	
+	input[type="text"]:focus{
+		outline: none;
+		border-color: var(--ghibli-green);
+		box-shadow: 0 0 5px rgba(91, 112, 66, 0.3);
+	}
+	
+	.radio-group, .checkbox-group{
+		margin: 10px 0 20px 0;
+	}
+	
+	button[type="submit"]{
+		background-color: var(--ghibli-green);
+		color: white;
+		padding: 12px 25px;
+		border: none;
+		border-radius: 25px;
+		cursor: pointer;
+		font-weight: bold;
+		font-size: 1rem;
+		display: block;
+		width: 100%;
+		transition: background 0.3s ease;
+	}
+	
+	button[type="submit"]:hover{
+		background-color: #485934;
+	}
+	
+	footer{
+		text-align: center;
+		padding: 25px;
+		color: #777;
+		font-size: 0.9rem;
+		background-color: #eae5d9;
+		margin-top: 40px;
+	}	
+	</style>
+</head>
+<body>
+
+	<header>
+		<h1>The Magical World of Studio Ghibli</h1>
+		<p class="subtitle">Soundscapes, Stories, and Interactive Adventures</p>
+		<img src="StudioGhibli.jpeg" alt="Studio Ghibli Banner⭐">
+	</header>
+	
+	<nav>
+		<ul>
+			<li><a href="#1">Soundtrack</a></li>
+			<li><a href="#2">Interactive Form</a></li>
+		</ul>
+	</nav>
+	
+	<section id="1">
+		<h2>Ghibli(Howl's Moving Castle)</h2>
+			<video width="400" height="300" controls>
+				<source src="soundtrack.webm" type="video/webm">
+			</video>
+	</section>
+	
+	<section id="2">
+		<h2>Interactive Elements</h2>
+			<form>
+				<label for="name">Name: </label>
+				<input type="text" placeholder="Enter your name... " name="name" id="name" required autofocus><br><br>
+				
+				<label for="email">Email: </label>
+				<input type="text" placeholder="Enter your email... " name="email" id="email" required ><br><br>
+				
+				<label>Gender:</label>
+				<div class="radio-group">
+					<input type="radio" value="male" name="gender" id="male">
+					<label for="male">Male</label>
+					<input type="radio" value="female" name="gender" id="female">
+				<label for="female">Female</label>
+				</div>
+
+				<label>Favourite Hobbies:</label>
+				<div class="checkbox-group">
+					<input type="checkbox" id="hobby1" value="Streaming">
+					<label for="hobby1">Streaming</label>
+					<input type="checkbox" id="hobby2" value="coding">
+					<label for="hobby2">Coding</label>
+				</div>
+				
+				<button type="submit">Send to the Spirit World</button><br>
+			</form>
+	</section>
+	
+	<footer>
+		<p>&copy; 2026 Studio Ghibli Fan Page. Made with love for the world and CSS.</p>
+	</footer>
+	
+</body>
+</html>
+
+	
