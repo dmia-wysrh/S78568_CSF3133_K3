@@ -1,0 +1,121 @@
+/* Body styling with default font and background */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header section with background image cover and white text */
+header {
+    background-image: url("books.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Headings typography using Merriweather */
+h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    margin-bottom: 10px;
+}
+
+/* Paragraph readability settings */
+p {
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+/* Navigation bar background and layout */
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+/* Navigation links display and padding */
+li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Hover effect for navigation links */
+li a:hover {
+    background-color: #111;
+}
+
+/* Active page indicator style */
+li a.active {
+    background-color: #04AA6D;
+}
+
+/* Main container styling */
+main {
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Product table structure and borders */
+#product {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#product td, #product th {
+    border: 1px solid #ddd;
+    padding: 12px 8px;
+}
+
+/* Table header styling (uppercase and centered) */
+#product th {
+    background-color: #04AA6D;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Alternating row colors */
+#product tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Table row hover effect */
+#product tr:hover {
+    background-color: #ddd;
+}
+
+/* Right alignment for price column */
+#product td.price {
+    text-align: right;
+}
+
+/* Footer styling */
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 15px;
+    color: #555;
+    border-top: 1px solid #ddd;
+}
